@@ -33,9 +33,13 @@ class RectangleOverlay(QWidget):
         self.shortcut = QShortcut(QKeySequence(Qt.Key_F9), self)
         self.shortcut.activated.connect(self.close_application)
 
+        self.latest_ocr_text = ""
+        self.latest_item = None
+
     def delayed_update(self):
         self.update_position()
         self.capture_and_ocr()
+        self.update()
 
     def paintEvent(self, event):
         painter = QPainter(self)
@@ -45,15 +49,25 @@ class RectangleOverlay(QWidget):
     
         painter.drawRect(0, 0, self.rect_width, self.rect_height)
     
-        item = self.parse_item('Your OCR text here...')
+        if self.latest_item:
+            dps_values = self.latest_item.calculate_dps()
+            dps_text = f"DPS: Current: {dps_values[0]:.2f}, Base: {dps_values[1]:.2f}, Max Qual: {dps_values[2]:.2f}"
+        else:
+            dps_text = "DPS: Calculating..."
     
-        dps_values = item.calculate_dps()
-        dps_text = f"DPS: Current: {dps_values[0]:.2f}, Base: {dps_values[1]:.2f}, Max Qual: {dps_values[2]:.2f}"
-    
-        painter.setPen(QPen(Qt.white))
         painter.setFont(QFont("Arial", 10))
     
         text_rect = QRect(10, self.rect_height - 30, self.rect_width - 20, 20)
+        
+        # Draw semi-transparent black bar without border
+        painter.setPen(Qt.NoPen)
+        painter.setBrush(Qt.black)
+        painter.setOpacity(0.9)
+        painter.drawRect(text_rect)
+        
+        # Draw DPS text
+        painter.setPen(QPen(Qt.white))
+        painter.setOpacity(1.0)
         painter.drawText(text_rect, Qt.AlignLeft | Qt.AlignTop, dps_text)
     
         painter.end()
@@ -78,9 +92,10 @@ class RectangleOverlay(QWidget):
         text = pytesseract.image_to_string(image_path)
         print("OCR Output:", text)
 
-        item = self.parse_item(text)
+        self.latest_ocr_text = text
+        self.latest_item = self.parse_item(text)
         
-        print("Parsed Item:", item)
+        print("Parsed Item:", self.latest_item)
 
     def parse_item(self, text):
         name = None

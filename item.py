@@ -1,3 +1,5 @@
+import json
+
 class Item:
     def __init__(self, name, physical_damage=[22, 55], cold_damage=None, lightning_damage=None, chaos_damage=None, fire_damage=None, elemental_damage=None, critical_hit_chance=None, attacks_per_second=None, item_level=None, quality=None):
         self.name = name
@@ -67,6 +69,16 @@ class Item:
         else:
             total_damage_current = total_damage
         
+        if self.physical_damage_base:
+            total_damage_base = total_damage + (self.physical_damage_base[0][0] + self.physical_damage_base[0][1]) / 2
+        else:
+            total_damage_base = total_damage
+        
+        if self.physical_damage_max_qual:
+            total_damage_max_qual = total_damage + (self.physical_damage_max_qual[0][0] + self.physical_damage_max_qual[0][1]) / 2
+        else:
+            total_damage_max_qual = total_damage
+
         if self.attacks_per_second:
             try:
                 attacks_per_second = float(self.attacks_per_second)
@@ -75,16 +87,34 @@ class Item:
         else:
             attacks_per_second = 0
 
-        if damage_count > 0 and attacks_per_second > 0:
+        if attacks_per_second > 0:
+            total_damage_base = total_damage_base * attacks_per_second
             total_damage_current = total_damage_current * attacks_per_second
-            return total_damage_current
+            total_damage_max_qual = total_damage_max_qual * attacks_per_second
+            total_damages = [total_damage_current, total_damage_base, total_damage_max_qual]
+            return total_damages
 
-        return 0
+        return [0, 0, 0]
 
     def __str__(self):
-        dps_value = self.calculate_dps()
-        return (f"Item: {self.name}, Physical Damage: {self.physical_damage_current}, Cold Damage: {self.cold_damage}, "
-                f"Lightning Damage: {self.lightning_damage}, Chaos Damage: {self.chaos_damage}, Fire Damage: {self.fire_damage}, "
-                f"Elemental Damage: {self.elemental_damage}, Critical Hit Chance: {self.critical_hit_chance}, "
-                f"Attacks per Second: {self.attacks_per_second}, Item Level: {self.item_level}, Quality: {self.quality}, "
-                f"DPS: {dps_value:.2f}")
+        dps_values = self.calculate_dps()
+        item_details = {
+            "name": self.name,
+            "physical_damage": self.physical_damage_current,
+            "cold_damage": self.cold_damage,
+            "lightning_damage": self.lightning_damage,
+            "chaos_damage": self.chaos_damage,
+            "fire_damage": self.fire_damage,
+            "elemental_damage": self.elemental_damage,
+            "critical_hit_chance": self.critical_hit_chance,
+            "attacks_per_second": self.attacks_per_second,
+            "item_level": self.item_level,
+            "quality": self.quality,
+            "dps": {
+                "current": round(dps_values[0], 2),
+                "base": round(dps_values[1], 2),
+                "max_quality": round(dps_values[2], 2),
+                "physical_max_quality": round(dps_values[2], 2)  # Physical DPS with max quality
+            }
+        }
+        return json.dumps(item_details, indent=4)
