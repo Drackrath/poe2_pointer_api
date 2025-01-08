@@ -49,3 +49,14 @@ def get_module_base_address(process_name):
     ctypes.windll.kernel32.CloseHandle(process_handle)
 
     return module_info.lpBaseOfDll
+
+
+def get_pointer(base ,offsets):
+    """
+    Follows a series of pointers to get a value from memory.
+    """
+    addr = pm.read_longlong(base) 
+    for i in offsets:
+        if i != offsets[-1]:
+            addr = pm.read_longlong(addr + i)
+    return pm.read_int(addr + offsets[-1]) 

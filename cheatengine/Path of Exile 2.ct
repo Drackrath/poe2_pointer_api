@@ -853,6 +853,104 @@
         </CheatEntry>
       </CheatEntries>
     </CheatEntry>
+    <CheatEntry>
+      <ID>78</ID>
+      <Description>"energyshield ingame"</Description>
+      <GroupHeader>1</GroupHeader>
+      <Address>0</Address>
+      <CheatEntries>
+        <CheatEntry>
+          <ID>75</ID>
+          <Description>"No description"</Description>
+          <VariableType>4 Bytes</VariableType>
+          <Address>22C51A0A384</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>76</ID>
+          <Description>"No description"</Description>
+          <VariableType>4 Bytes</VariableType>
+          <Address>22C51A0A388</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>77</ID>
+          <Description>"No description"</Description>
+          <VariableType>4 Bytes</VariableType>
+          <Address>23089B9208C</Address>
+        </CheatEntry>
+      </CheatEntries>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>85</ID>
+      <Description>"energy shield characterselect"</Description>
+      <GroupHeader>1</GroupHeader>
+      <Address>0</Address>
+      <CheatEntries>
+        <CheatEntry>
+          <ID>79</ID>
+          <Description>"No description"</Description>
+          <VariableType>4 Bytes</VariableType>
+          <Address>23049101BA4</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>80</ID>
+          <Description>"No description"</Description>
+          <VariableType>4 Bytes</VariableType>
+          <Address>23049101BA8</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>81</ID>
+          <Description>"No description"</Description>
+          <VariableType>4 Bytes</VariableType>
+          <Address>23049508E80</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>82</ID>
+          <Description>"No description"</Description>
+          <VariableType>4 Bytes</VariableType>
+          <Address>230526ADF64</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>83</ID>
+          <Description>"No description"</Description>
+          <VariableType>4 Bytes</VariableType>
+          <Address>23062BE5348</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>84</ID>
+          <Description>"No description"</Description>
+          <VariableType>4 Bytes</VariableType>
+          <Address>23089D8A4F4</Address>
+        </CheatEntry>
+      </CheatEntries>
+    </CheatEntry>
   </CheatEntries>
+  <CheatCodes>
+    <CodeEntry>
+      <Description>Code :mov [rsi+00002A48],eax</Description>
+      <AddressString>PathOfExileSteam.exe+1A1E25C</AddressString>
+      <Before>
+        <Byte>00</Byte>
+        <Byte>00</Byte>
+        <Byte>8B</Byte>
+        <Byte>47</Byte>
+        <Byte>18</Byte>
+      </Before>
+      <Actual>
+        <Byte>89</Byte>
+        <Byte>86</Byte>
+        <Byte>48</Byte>
+        <Byte>2A</Byte>
+        <Byte>00</Byte>
+        <Byte>00</Byte>
+      </Actual>
+      <After>
+        <Byte>48</Byte>
+        <Byte>8D</Byte>
+        <Byte>8E</Byte>
+        <Byte>30</Byte>
+        <Byte>01</Byte>
+      </After>
+    </CodeEntry>
+  </CheatCodes>
   <UserdefinedSymbols/>
 </CheatTable>
