@@ -1,6 +1,8 @@
 import ctypes
 import ctypes.wintypes as wintypes
 import psutil
+from pymem import Pymem
+
 
 def get_pid(process_name):
     for proc in psutil.process_iter(['pid', 'name']):
@@ -55,6 +57,7 @@ def get_pointer(base ,offsets):
     """
     Follows a series of pointers to get a value from memory.
     """
+    pm = Pymem("PathOfExileSteam.exe")
     addr = pm.read_longlong(base) 
     for i in offsets:
         if i != offsets[-1]:
