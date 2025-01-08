@@ -53,11 +53,10 @@ def get_module_base_address(process_name):
     return module_info.lpBaseOfDll
 
 
-def get_pointer(base ,offsets):
+def get_pointer(pm, base ,offsets):
     """
     Follows a series of pointers to get a value from memory.
     """
-    pm = Pymem("PathOfExileSteam.exe")
     addr = pm.read_longlong(base) 
     for i in offsets:
         if i != offsets[-1]:
