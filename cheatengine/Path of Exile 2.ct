@@ -1,0 +1,858 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CheatTable CheatEngineTableVersion="45">
+  <CheatEntries>
+    <CheatEntry>
+      <ID>74</ID>
+      <Description>"Gold POE"</Description>
+      <Options moManualExpandCollapse="1"/>
+      <GroupHeader>1</GroupHeader>
+      <Address>0</Address>
+      <CheatEntries>
+        <CheatEntry>
+          <ID>17</ID>
+          <Description>"pointerscan result"</Description>
+          <VariableType>4 Bytes</VariableType>
+          <Address>"PathOfExileSteam.exe"+03891F00</Address>
+          <Offsets>
+            <Offset>2A48</Offset>
+            <Offset>1E8</Offset>
+            <Offset>8</Offset>
+            <Offset>48</Offset>
+            <Offset>C78</Offset>
+            <Offset>8</Offset>
+            <Offset>A8</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>18</ID>
+          <Description>"pointerscan result"</Description>
+          <VariableType>4 Bytes</VariableType>
+          <Address>"PathOfExileSteam.exe"+03892018</Address>
+          <Offsets>
+            <Offset>2A48</Offset>
+            <Offset>8</Offset>
+            <Offset>218</Offset>
+            <Offset>10</Offset>
+            <Offset>48</Offset>
+            <Offset>18</Offset>
+            <Offset>78</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>19</ID>
+          <Description>"pointerscan result"</Description>
+          <VariableType>4 Bytes</VariableType>
+          <Address>"PathOfExileSteam.exe"+03891F70</Address>
+          <Offsets>
+            <Offset>2A48</Offset>
+            <Offset>8</Offset>
+            <Offset>218</Offset>
+            <Offset>10</Offset>
+            <Offset>48</Offset>
+            <Offset>18</Offset>
+            <Offset>5B8</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>20</ID>
+          <Description>"pointerscan result"</Description>
+          <VariableType>4 Bytes</VariableType>
+          <Address>"PathOfExileSteam.exe"+03892018</Address>
+          <Offsets>
+            <Offset>2A48</Offset>
+            <Offset>200</Offset>
+            <Offset>28</Offset>
+            <Offset>38</Offset>
+            <Offset>8</Offset>
+            <Offset>8</Offset>
+            <Offset>78</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>21</ID>
+          <Description>"pointerscan result"</Description>
+          <VariableType>4 Bytes</VariableType>
+          <Address>"PathOfExileSteam.exe"+03892018</Address>
+          <Offsets>
+            <Offset>2A48</Offset>
+            <Offset>200</Offset>
+            <Offset>28</Offset>
+            <Offset>38</Offset>
+            <Offset>18</Offset>
+            <Offset>78</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>22</ID>
+          <Description>"pointerscan result"</Description>
+          <VariableType>4 Bytes</VariableType>
+          <Address>"PathOfExileSteam.exe"+03891F70</Address>
+          <Offsets>
+            <Offset>2A48</Offset>
+            <Offset>1E8</Offset>
+            <Offset>30</Offset>
+            <Offset>38</Offset>
+            <Offset>8</Offset>
+            <Offset>8</Offset>
+            <Offset>5B8</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>23</ID>
+          <Description>"pointerscan result"</Description>
+          <VariableType>4 Bytes</VariableType>
+          <Address>"PathOfExileSteam.exe"+03891F70</Address>
+          <Offsets>
+            <Offset>2A48</Offset>
+            <Offset>1E8</Offset>
+            <Offset>30</Offset>
+            <Offset>38</Offset>
+            <Offset>18</Offset>
+            <Offset>5B8</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>24</ID>
+          <Description>"pointerscan result"</Description>
+          <VariableType>4 Bytes</VariableType>
+          <Address>"PathOfExileSteam.exe"+03892018</Address>
+          <Offsets>
+            <Offset>2A48</Offset>
+            <Offset>1E8</Offset>
+            <Offset>30</Offset>
+            <Offset>38</Offset>
+            <Offset>30</Offset>
+            <Offset>18</Offset>
+            <Offset>78</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>25</ID>
+          <Description>"pointerscan result"</Description>
+          <VariableType>4 Bytes</VariableType>
+          <Address>"PathOfExileSteam.exe"+03891F70</Address>
+          <Offsets>
+            <Offset>2A48</Offset>
+            <Offset>1E8</Offset>
+            <Offset>30</Offset>
+            <Offset>38</Offset>
+            <Offset>30</Offset>
+            <Offset>18</Offset>
+            <Offset>5B8</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>26</ID>
+          <Description>"pointerscan result"</Description>
+          <VariableType>4 Bytes</VariableType>
+          <Address>"PathOfExileSteam.exe"+03892018</Address>
+          <Offsets>
+            <Offset>2A48</Offset>
+            <Offset>1E8</Offset>
+            <Offset>10</Offset>
+            <Offset>48</Offset>
+            <Offset>8</Offset>
+            <Offset>8</Offset>
+            <Offset>78</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>27</ID>
+          <Description>"pointerscan result"</Description>
+          <VariableType>4 Bytes</VariableType>
+          <Address>"PathOfExileSteam.exe"+03892018</Address>
+          <Offsets>
+            <Offset>2A48</Offset>
+            <Offset>1E8</Offset>
+            <Offset>10</Offset>
+            <Offset>48</Offset>
+            <Offset>18</Offset>
+            <Offset>78</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>28</ID>
+          <Description>"pointerscan result"</Description>
+          <VariableType>4 Bytes</VariableType>
+          <Address>"PathOfExileSteam.exe"+03892018</Address>
+          <Offsets>
+            <Offset>2A48</Offset>
+            <Offset>8</Offset>
+            <Offset>218</Offset>
+            <Offset>30</Offset>
+            <Offset>38</Offset>
+            <Offset>18</Offset>
+            <Offset>78</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>29</ID>
+          <Description>"pointerscan result"</Description>
+          <VariableType>4 Bytes</VariableType>
+          <Address>"PathOfExileSteam.exe"+03891F70</Address>
+          <Offsets>
+            <Offset>2A48</Offset>
+            <Offset>8</Offset>
+            <Offset>218</Offset>
+            <Offset>30</Offset>
+            <Offset>38</Offset>
+            <Offset>18</Offset>
+            <Offset>5B8</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>30</ID>
+          <Description>"pointerscan result"</Description>
+          <VariableType>4 Bytes</VariableType>
+          <Address>"PathOfExileSteam.exe"+03891F00</Address>
+          <Offsets>
+            <Offset>2A48</Offset>
+            <Offset>200</Offset>
+            <Offset>8</Offset>
+            <Offset>40</Offset>
+            <Offset>C78</Offset>
+            <Offset>8</Offset>
+            <Offset>A8</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>31</ID>
+          <Description>"pointerscan result"</Description>
+          <VariableType>4 Bytes</VariableType>
+          <Address>"PathOfExileSteam.exe"+03891F00</Address>
+          <Offsets>
+            <Offset>2A48</Offset>
+            <Offset>1E0</Offset>
+            <Offset>18</Offset>
+            <Offset>40</Offset>
+            <Offset>C78</Offset>
+            <Offset>8</Offset>
+            <Offset>A8</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>32</ID>
+          <Description>"pointerscan result"</Description>
+          <VariableType>4 Bytes</VariableType>
+          <Address>"PathOfExileSteam.exe"+03892018</Address>
+          <Offsets>
+            <Offset>2A48</Offset>
+            <Offset>200</Offset>
+            <Offset>20</Offset>
+            <Offset>40</Offset>
+            <Offset>30</Offset>
+            <Offset>18</Offset>
+            <Offset>78</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>33</ID>
+          <Description>"pointerscan result"</Description>
+          <VariableType>4 Bytes</VariableType>
+          <Address>"PathOfExileSteam.exe"+03891F70</Address>
+          <Offsets>
+            <Offset>2A48</Offset>
+            <Offset>200</Offset>
+            <Offset>20</Offset>
+            <Offset>40</Offset>
+            <Offset>30</Offset>
+            <Offset>18</Offset>
+            <Offset>5B8</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>34</ID>
+          <Description>"pointerscan result"</Description>
+          <VariableType>4 Bytes</VariableType>
+          <Address>"PathOfExileSteam.exe"+03892018</Address>
+          <Offsets>
+            <Offset>2A48</Offset>
+            <Offset>200</Offset>
+            <Offset>20</Offset>
+            <Offset>40</Offset>
+            <Offset>8</Offset>
+            <Offset>8</Offset>
+            <Offset>78</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>35</ID>
+          <Description>"pointerscan result"</Description>
+          <VariableType>4 Bytes</VariableType>
+          <Address>"PathOfExileSteam.exe"+03892018</Address>
+          <Offsets>
+            <Offset>2A48</Offset>
+            <Offset>200</Offset>
+            <Offset>20</Offset>
+            <Offset>40</Offset>
+            <Offset>18</Offset>
+            <Offset>78</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>36</ID>
+          <Description>"pointerscan result"</Description>
+          <VariableType>4 Bytes</VariableType>
+          <Address>"PathOfExileSteam.exe"+03891F70</Address>
+          <Offsets>
+            <Offset>2A48</Offset>
+            <Offset>200</Offset>
+            <Offset>20</Offset>
+            <Offset>40</Offset>
+            <Offset>8</Offset>
+            <Offset>8</Offset>
+            <Offset>5B8</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>37</ID>
+          <Description>"pointerscan result"</Description>
+          <VariableType>4 Bytes</VariableType>
+          <Address>"PathOfExileSteam.exe"+03891F70</Address>
+          <Offsets>
+            <Offset>2A48</Offset>
+            <Offset>200</Offset>
+            <Offset>20</Offset>
+            <Offset>40</Offset>
+            <Offset>18</Offset>
+            <Offset>5B8</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>38</ID>
+          <Description>"pointerscan result"</Description>
+          <VariableType>4 Bytes</VariableType>
+          <Address>"PathOfExileSteam.exe"+03892018</Address>
+          <Offsets>
+            <Offset>2A48</Offset>
+            <Offset>1E8</Offset>
+            <Offset>10</Offset>
+            <Offset>48</Offset>
+            <Offset>30</Offset>
+            <Offset>18</Offset>
+            <Offset>78</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>39</ID>
+          <Description>"pointerscan result"</Description>
+          <VariableType>4 Bytes</VariableType>
+          <Address>"PathOfExileSteam.exe"+03891F70</Address>
+          <Offsets>
+            <Offset>2A48</Offset>
+            <Offset>1E8</Offset>
+            <Offset>10</Offset>
+            <Offset>48</Offset>
+            <Offset>30</Offset>
+            <Offset>18</Offset>
+            <Offset>5B8</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>40</ID>
+          <Description>"pointerscan result"</Description>
+          <VariableType>4 Bytes</VariableType>
+          <Address>"PathOfExileSteam.exe"+03892018</Address>
+          <Offsets>
+            <Offset>2A48</Offset>
+            <Offset>8</Offset>
+            <Offset>218</Offset>
+            <Offset>28</Offset>
+            <Offset>40</Offset>
+            <Offset>18</Offset>
+            <Offset>78</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>41</ID>
+          <Description>"pointerscan result"</Description>
+          <VariableType>4 Bytes</VariableType>
+          <Address>"PathOfExileSteam.exe"+03891F70</Address>
+          <Offsets>
+            <Offset>2A48</Offset>
+            <Offset>8</Offset>
+            <Offset>218</Offset>
+            <Offset>28</Offset>
+            <Offset>40</Offset>
+            <Offset>18</Offset>
+            <Offset>5B8</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>42</ID>
+          <Description>"pointerscan result"</Description>
+          <VariableType>4 Bytes</VariableType>
+          <Address>"PathOfExileSteam.exe"+03891F00</Address>
+          <Offsets>
+            <Offset>2A48</Offset>
+            <Offset>1E0</Offset>
+            <Offset>10</Offset>
+            <Offset>48</Offset>
+            <Offset>C78</Offset>
+            <Offset>8</Offset>
+            <Offset>A8</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>43</ID>
+          <Description>"pointerscan result"</Description>
+          <VariableType>4 Bytes</VariableType>
+          <Address>"PathOfExileSteam.exe"+03891F70</Address>
+          <Offsets>
+            <Offset>2A48</Offset>
+            <Offset>1E8</Offset>
+            <Offset>28</Offset>
+            <Offset>40</Offset>
+            <Offset>8</Offset>
+            <Offset>8</Offset>
+            <Offset>5B8</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>44</ID>
+          <Description>"pointerscan result"</Description>
+          <VariableType>4 Bytes</VariableType>
+          <Address>"PathOfExileSteam.exe"+03891F70</Address>
+          <Offsets>
+            <Offset>2A48</Offset>
+            <Offset>1E8</Offset>
+            <Offset>28</Offset>
+            <Offset>40</Offset>
+            <Offset>18</Offset>
+            <Offset>5B8</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>45</ID>
+          <Description>"pointerscan result"</Description>
+          <VariableType>4 Bytes</VariableType>
+          <Address>"PathOfExileSteam.exe"+03891F00</Address>
+          <Offsets>
+            <Offset>2A48</Offset>
+            <Offset>1E0</Offset>
+            <Offset>30</Offset>
+            <Offset>38</Offset>
+            <Offset>C78</Offset>
+            <Offset>8</Offset>
+            <Offset>A8</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>46</ID>
+          <Description>"pointerscan result"</Description>
+          <VariableType>4 Bytes</VariableType>
+          <Address>"PathOfExileSteam.exe"+03891F00</Address>
+          <Offsets>
+            <Offset>2A48</Offset>
+            <Offset>1E8</Offset>
+            <Offset>28</Offset>
+            <Offset>38</Offset>
+            <Offset>C78</Offset>
+            <Offset>8</Offset>
+            <Offset>A8</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>47</ID>
+          <Description>"pointerscan result"</Description>
+          <VariableType>4 Bytes</VariableType>
+          <Address>"PathOfExileSteam.exe"+03891F70</Address>
+          <Offsets>
+            <Offset>2A48</Offset>
+            <Offset>200</Offset>
+            <Offset>8</Offset>
+            <Offset>48</Offset>
+            <Offset>18</Offset>
+            <Offset>5B8</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>48</ID>
+          <Description>"pointerscan result"</Description>
+          <VariableType>4 Bytes</VariableType>
+          <Address>"PathOfExileSteam.exe"+03891F70</Address>
+          <Offsets>
+            <Offset>2A48</Offset>
+            <Offset>200</Offset>
+            <Offset>8</Offset>
+            <Offset>48</Offset>
+            <Offset>8</Offset>
+            <Offset>8</Offset>
+            <Offset>5B8</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>49</ID>
+          <Description>"pointerscan result"</Description>
+          <VariableType>4 Bytes</VariableType>
+          <Address>"PathOfExileSteam.exe"+03892018</Address>
+          <Offsets>
+            <Offset>2A48</Offset>
+            <Offset>1E8</Offset>
+            <Offset>28</Offset>
+            <Offset>40</Offset>
+            <Offset>30</Offset>
+            <Offset>18</Offset>
+            <Offset>78</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>50</ID>
+          <Description>"pointerscan result"</Description>
+          <VariableType>4 Bytes</VariableType>
+          <Address>"PathOfExileSteam.exe"+03891F70</Address>
+          <Offsets>
+            <Offset>2A48</Offset>
+            <Offset>1E8</Offset>
+            <Offset>28</Offset>
+            <Offset>40</Offset>
+            <Offset>30</Offset>
+            <Offset>18</Offset>
+            <Offset>5B8</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>51</ID>
+          <Description>"pointerscan result"</Description>
+          <VariableType>4 Bytes</VariableType>
+          <Address>"PathOfExileSteam.exe"+03892018</Address>
+          <Offsets>
+            <Offset>2A48</Offset>
+            <Offset>8</Offset>
+            <Offset>230</Offset>
+            <Offset>8</Offset>
+            <Offset>48</Offset>
+            <Offset>18</Offset>
+            <Offset>78</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>52</ID>
+          <Description>"pointerscan result"</Description>
+          <VariableType>4 Bytes</VariableType>
+          <Address>"PathOfExileSteam.exe"+03891F70</Address>
+          <Offsets>
+            <Offset>2A48</Offset>
+            <Offset>8</Offset>
+            <Offset>230</Offset>
+            <Offset>8</Offset>
+            <Offset>48</Offset>
+            <Offset>18</Offset>
+            <Offset>5B8</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>53</ID>
+          <Description>"pointerscan result"</Description>
+          <VariableType>4 Bytes</VariableType>
+          <Address>"PathOfExileSteam.exe"+03892018</Address>
+          <Offsets>
+            <Offset>2A48</Offset>
+            <Offset>200</Offset>
+            <Offset>28</Offset>
+            <Offset>38</Offset>
+            <Offset>30</Offset>
+            <Offset>18</Offset>
+            <Offset>78</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>54</ID>
+          <Description>"pointerscan result"</Description>
+          <VariableType>4 Bytes</VariableType>
+          <Address>"PathOfExileSteam.exe"+03891F70</Address>
+          <Offsets>
+            <Offset>2A48</Offset>
+            <Offset>200</Offset>
+            <Offset>28</Offset>
+            <Offset>38</Offset>
+            <Offset>30</Offset>
+            <Offset>18</Offset>
+            <Offset>5B8</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>55</ID>
+          <Description>"pointerscan result"</Description>
+          <VariableType>4 Bytes</VariableType>
+          <Address>"PathOfExileSteam.exe"+03891F70</Address>
+          <Offsets>
+            <Offset>2A48</Offset>
+            <Offset>200</Offset>
+            <Offset>28</Offset>
+            <Offset>38</Offset>
+            <Offset>8</Offset>
+            <Offset>8</Offset>
+            <Offset>5B8</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>56</ID>
+          <Description>"pointerscan result"</Description>
+          <VariableType>4 Bytes</VariableType>
+          <Address>"PathOfExileSteam.exe"+03891F70</Address>
+          <Offsets>
+            <Offset>2A48</Offset>
+            <Offset>200</Offset>
+            <Offset>28</Offset>
+            <Offset>38</Offset>
+            <Offset>18</Offset>
+            <Offset>5B8</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>57</ID>
+          <Description>"pointerscan result"</Description>
+          <VariableType>4 Bytes</VariableType>
+          <Address>"PathOfExileSteam.exe"+03892018</Address>
+          <Offsets>
+            <Offset>2A48</Offset>
+            <Offset>1E8</Offset>
+            <Offset>30</Offset>
+            <Offset>38</Offset>
+            <Offset>8</Offset>
+            <Offset>8</Offset>
+            <Offset>78</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>58</ID>
+          <Description>"pointerscan result"</Description>
+          <VariableType>4 Bytes</VariableType>
+          <Address>"PathOfExileSteam.exe"+03892018</Address>
+          <Offsets>
+            <Offset>2A48</Offset>
+            <Offset>1E8</Offset>
+            <Offset>30</Offset>
+            <Offset>38</Offset>
+            <Offset>18</Offset>
+            <Offset>78</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>59</ID>
+          <Description>"pointerscan result"</Description>
+          <VariableType>4 Bytes</VariableType>
+          <Address>"PathOfExileSteam.exe"+03891F00</Address>
+          <Offsets>
+            <Offset>2A48</Offset>
+            <Offset>200</Offset>
+            <Offset>0</Offset>
+            <Offset>48</Offset>
+            <Offset>C78</Offset>
+            <Offset>8</Offset>
+            <Offset>A8</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>60</ID>
+          <Description>"pointerscan result"</Description>
+          <VariableType>4 Bytes</VariableType>
+          <Address>"PathOfExileSteam.exe"+03891F00</Address>
+          <Offsets>
+            <Offset>2A48</Offset>
+            <Offset>1E8</Offset>
+            <Offset>10</Offset>
+            <Offset>40</Offset>
+            <Offset>C78</Offset>
+            <Offset>8</Offset>
+            <Offset>A8</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>61</ID>
+          <Description>"pointerscan result"</Description>
+          <VariableType>4 Bytes</VariableType>
+          <Address>"PathOfExileSteam.exe"+03892018</Address>
+          <Offsets>
+            <Offset>2A48</Offset>
+            <Offset>200</Offset>
+            <Offset>8</Offset>
+            <Offset>48</Offset>
+            <Offset>8</Offset>
+            <Offset>8</Offset>
+            <Offset>78</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>62</ID>
+          <Description>"pointerscan result"</Description>
+          <VariableType>4 Bytes</VariableType>
+          <Address>"PathOfExileSteam.exe"+03892018</Address>
+          <Offsets>
+            <Offset>2A48</Offset>
+            <Offset>200</Offset>
+            <Offset>8</Offset>
+            <Offset>48</Offset>
+            <Offset>18</Offset>
+            <Offset>78</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>63</ID>
+          <Description>"pointerscan result"</Description>
+          <VariableType>4 Bytes</VariableType>
+          <Address>"PathOfExileSteam.exe"+03892018</Address>
+          <Offsets>
+            <Offset>2A48</Offset>
+            <Offset>8</Offset>
+            <Offset>230</Offset>
+            <Offset>20</Offset>
+            <Offset>40</Offset>
+            <Offset>18</Offset>
+            <Offset>78</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>64</ID>
+          <Description>"pointerscan result"</Description>
+          <VariableType>4 Bytes</VariableType>
+          <Address>"PathOfExileSteam.exe"+03891F70</Address>
+          <Offsets>
+            <Offset>2A48</Offset>
+            <Offset>8</Offset>
+            <Offset>230</Offset>
+            <Offset>20</Offset>
+            <Offset>40</Offset>
+            <Offset>18</Offset>
+            <Offset>5B8</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>65</ID>
+          <Description>"pointerscan result"</Description>
+          <VariableType>4 Bytes</VariableType>
+          <Address>"PathOfExileSteam.exe"+03891F00</Address>
+          <Offsets>
+            <Offset>2A48</Offset>
+            <Offset>200</Offset>
+            <Offset>20</Offset>
+            <Offset>38</Offset>
+            <Offset>C78</Offset>
+            <Offset>8</Offset>
+            <Offset>A8</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>66</ID>
+          <Description>"pointerscan result"</Description>
+          <VariableType>4 Bytes</VariableType>
+          <Address>"PathOfExileSteam.exe"+03892018</Address>
+          <Offsets>
+            <Offset>2A48</Offset>
+            <Offset>200</Offset>
+            <Offset>8</Offset>
+            <Offset>48</Offset>
+            <Offset>30</Offset>
+            <Offset>18</Offset>
+            <Offset>78</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>67</ID>
+          <Description>"pointerscan result"</Description>
+          <VariableType>4 Bytes</VariableType>
+          <Address>"PathOfExileSteam.exe"+03891F70</Address>
+          <Offsets>
+            <Offset>2A48</Offset>
+            <Offset>200</Offset>
+            <Offset>8</Offset>
+            <Offset>48</Offset>
+            <Offset>30</Offset>
+            <Offset>18</Offset>
+            <Offset>5B8</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>68</ID>
+          <Description>"pointerscan result"</Description>
+          <VariableType>4 Bytes</VariableType>
+          <Address>"PathOfExileSteam.exe"+03892018</Address>
+          <Offsets>
+            <Offset>2A48</Offset>
+            <Offset>1E8</Offset>
+            <Offset>28</Offset>
+            <Offset>40</Offset>
+            <Offset>8</Offset>
+            <Offset>8</Offset>
+            <Offset>78</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>69</ID>
+          <Description>"pointerscan result"</Description>
+          <VariableType>4 Bytes</VariableType>
+          <Address>"PathOfExileSteam.exe"+03892018</Address>
+          <Offsets>
+            <Offset>2A48</Offset>
+            <Offset>1E8</Offset>
+            <Offset>28</Offset>
+            <Offset>40</Offset>
+            <Offset>18</Offset>
+            <Offset>78</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>70</ID>
+          <Description>"pointerscan result"</Description>
+          <VariableType>4 Bytes</VariableType>
+          <Address>"PathOfExileSteam.exe"+03891F70</Address>
+          <Offsets>
+            <Offset>2A48</Offset>
+            <Offset>1E8</Offset>
+            <Offset>10</Offset>
+            <Offset>48</Offset>
+            <Offset>8</Offset>
+            <Offset>8</Offset>
+            <Offset>5B8</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>71</ID>
+          <Description>"pointerscan result"</Description>
+          <VariableType>4 Bytes</VariableType>
+          <Address>"PathOfExileSteam.exe"+03891F70</Address>
+          <Offsets>
+            <Offset>2A48</Offset>
+            <Offset>1E8</Offset>
+            <Offset>10</Offset>
+            <Offset>48</Offset>
+            <Offset>18</Offset>
+            <Offset>5B8</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>72</ID>
+          <Description>"pointerscan result"</Description>
+          <VariableType>4 Bytes</VariableType>
+          <Address>"PathOfExileSteam.exe"+03892018</Address>
+          <Offsets>
+            <Offset>2A48</Offset>
+            <Offset>8</Offset>
+            <Offset>230</Offset>
+            <Offset>28</Offset>
+            <Offset>38</Offset>
+            <Offset>18</Offset>
+            <Offset>78</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>73</ID>
+          <Description>"pointerscan result"</Description>
+          <VariableType>4 Bytes</VariableType>
+          <Address>"PathOfExileSteam.exe"+03891F70</Address>
+          <Offsets>
+            <Offset>2A48</Offset>
+            <Offset>8</Offset>
+            <Offset>230</Offset>
+            <Offset>28</Offset>
+            <Offset>38</Offset>
+            <Offset>18</Offset>
+            <Offset>5B8</Offset>
+          </Offsets>
+        </CheatEntry>
+      </CheatEntries>
+    </CheatEntry>
+  </CheatEntries>
+  <UserdefinedSymbols/>
+</CheatTable>
