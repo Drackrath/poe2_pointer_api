@@ -18,4 +18,4 @@ This project aims to provide application creators with a live-data feed from a r
 ## Disclaimer
 This project is intended for educational and informational purposes only. It is not designed to alter game data or provide unfair advantages to players. The goal is to enable developers to create applications that can read live data from a running Path of Exile 2 client without interfering with the game's integrity or providing significant benefits that would not be available in a typical game experience.
 
-**Warning:** The use of this project might violate the Terms of Service (ToS) of Path of Exile 2 and can result in your account being banned if the use is made public. Use at your own risk.
+**Warning:** The use of this project might violate the Terms of Service (ToS) of Path of Exile 2 and can result in your account being banned if the use is made public or detected. Use at your own risk.
