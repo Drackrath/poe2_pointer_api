@@ -2,7 +2,7 @@ import ctypes
 import ctypes.wintypes as wintypes
 import psutil
 from pymem import Pymem
-
+import subprocess
 
 def get_pid(process_name):
     for proc in psutil.process_iter(['pid', 'name']):
@@ -52,6 +52,19 @@ def get_module_base_address(process_name):
 
     return module_info.lpBaseOfDll
 
+def get_threadstack0_base_address(pid):
+    """
+    Executes threadstack.exe with the given PID and returns the BASE ADDRESS of THREADSTACK 0.
+    """
+    result = subprocess.run([r'C:\Development Tools\VSCodeProjects\POE2DPSVALUEChecker\src\threadstack.exe', str(pid)], capture_output=True, text=True)
+    if result.returncode != 0:
+        raise Exception("Failed to execute threadstack.exe")
+
+    for line in result.stdout.splitlines():
+        if "THREADSTACK 0 BASE ADDRESS" in line:
+            return int(line.split(':')[-1].strip(), 16)
+
+    raise Exception("THREADSTACK 0 BASE ADDRESS not found in output")
 
 def get_pointer(pm, base ,offsets):
     """
@@ -61,4 +74,4 @@ def get_pointer(pm, base ,offsets):
     for i in offsets:
         if i != offsets[-1]:
             addr = pm.read_longlong(addr + i)
-    return pm.read_int(addr + offsets[-1]) 
+    return pm.read_int(addr + offsets[-1])
