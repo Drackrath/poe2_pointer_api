@@ -5,7 +5,7 @@
 # using c++ tool threadstack.exe to find the base address of the threadstack0
 
 from pymem import Pymem
-import pointerservice as ps
+import src.pointerservice as ps
 
 process_name = "PathOfExileSteam.exe"
 pid = ps.get_pid(process_name) 
