@@ -2,7 +2,7 @@
 # The offset calculation is similar in a Threadstack of the game.
 # Therefore the pointers can be calculated from 2 different patches with the application of Pymem being THREADSTACK0.
 # New Pointers should also be found within the THREADSTACK0 application to ensure patch proofing.
-# This approach is discontinued.
+# This approach is discontinued. 
 
 from pymem import Pymem
 import pointerservice as ps
