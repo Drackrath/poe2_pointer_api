@@ -1,0 +1,16 @@
+{
+    "debug.internalConsoleOptions": "neverOpen",
+    "python.testing.unittestEnabled": false,
+    "python.testing.pytestEnabled": false,
+    "python.testing.nosetestsEnabled": false,
+    "python.testing.autoTestDiscoverOnSaveEnabled": false,
+    "debug.defaultConfigurations": [
+        {
+            "name": "Python: Run main.py",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/main.py",
+            "console": "integratedTerminal"
+        }
+    ]
+}
