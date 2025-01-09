@@ -3,6 +3,7 @@ import ctypes.wintypes as wintypes
 import psutil
 from pymem import Pymem
 import subprocess
+import xml.etree.ElementTree as ET
 
 def get_pid(process_name):
     for proc in psutil.process_iter(['pid', 'name']):
@@ -75,3 +76,54 @@ def get_pointer(pm, base ,offsets):
         if i != offsets[-1]:
             addr = pm.read_longlong(addr + i)
     return pm.read_int(addr + offsets[-1])
+
+def get_pointer_from_ct_file(ct_file_path, variable_name):
+    """
+    Reads the specified Cheat Engine .ct file and returns the pointer cheat entry for the given variable.
+    """
+    tree = ET.parse(ct_file_path)
+    root = tree.getroot()
+
+    for cheat_entry in root.findall(".//CheatEntry"):
+        description = cheat_entry.find("Description")
+        if description is not None and variable_name in description.text:
+            # Find the nested CheatEntry for the pointer scan result
+            nested_entry = cheat_entry.find(".//CheatEntry")
+            if nested_entry is not None:
+                address = nested_entry.find("Address").text
+                if '-' in address:
+                    base_offset = -int(address.split('-')[-1], 16)
+                elif '+' in address:
+                    base_offset = int(address.split('+')[-1], 16)
+                else:
+                    base_offset = 0
+                offsets = [int(offset.text, 16) for offset in nested_entry.find("Offsets").findall("Offset")]
+                offsets.reverse()  # Reverse the order of offsets to read them bottom-up
+                pointer_entry = {
+                    "ID": nested_entry.find("ID").text,
+                    "Description": nested_entry.find("Description").text,
+                    "Address": address,
+                    "BaseOffset": base_offset,
+                    "Offsets": offsets
+                }
+                return pointer_entry
+
+    raise Exception(f"Pointer cheat entry for variable '{variable_name}' not found in .ct file")
+
+def get_nth_group_entry_value(ct_file_path, group_description, n):
+    """
+    Reads the specified Cheat Engine .ct file and returns the value for the n-th entry in the group entry.
+    """
+    tree = ET.parse(ct_file_path)
+    root = tree.getroot()
+
+    for group_entry in root.findall(".//CheatEntry"):
+        description = group_entry.find("Description")
+        if description is not None and group_description in description.text:
+            group_entries = group_entry.findall(".//CheatEntry")
+            if len(group_entries) > n:
+                return group_entries[n]
+            else:
+                raise Exception(f"Group entry '{group_description}' does not have {n} entries")
+
+    raise Exception(f"Group entry '{group_description}' not found in .ct file")

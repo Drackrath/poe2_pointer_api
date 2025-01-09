@@ -16,16 +16,24 @@ pm = Pymem(process_name)
 allocationbase_address = ps.get_module_base_address(process_name)
 allocationbase_address_threadstack0 = ps.get_threadstack0_base_address(pid)
 
-print(f"allocationbase_address_threadstack0: {allocationbase_address_threadstack0}")
+print(f"allocationbase_address_threadstack0: {hex(allocationbase_address_threadstack0)}")
 
-base_offset_currentlife = -0x000001C8
+ct_file_path = r'C:\Development Tools\VSCodeProjects\POE2DPSVALUEChecker\cheatengine\Path of Exile 2 current_life.ct'
+pointer_entry = ps.get_pointer_from_ct_file(ct_file_path, "current_life_patch_e+f")
+print(f"pointer_entry: {pointer_entry}")
 
-base_address = allocationbase_address_threadstack0 + base_offset_currentlife             
+base_offset_currentlife = pointer_entry["BaseOffset"]
+
+print(f"base_offset_currentlife: {hex(base_offset_currentlife)}")
+
+base_address = allocationbase_address_threadstack0 + base_offset_currentlife
+print (f"base_address: {hex(base_address)}")
 
 # Offsets to follow
 offsetmap = {
-"current_health" : [0x38, 0x8, 0x110, 0x30, 0x48, 0x10, 0x20, 0x60, 0xA0, 0x48, 0x18, 0x378],
+    "current_health": pointer_entry["Offsets"],
 }
+
 value = ps.get_pointer(pm, base_address, offsetmap["current_health"])
 
 print(f"current_health: {value}")
