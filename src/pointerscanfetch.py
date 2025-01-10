@@ -18,22 +18,37 @@ allocationbase_address_threadstack0 = ps.get_threadstack0_base_address(pid)
 
 print(f"allocationbase_address_threadstack0: {hex(allocationbase_address_threadstack0)}")
 
-ct_file_path = r'C:\Development Tools\VSCodeProjects\POE2DPSVALUEChecker\cheatengine\Path of Exile 2 current_life.ct'
-pointer_entry = ps.get_pointer_from_ct_file(ct_file_path, "current_life_patch_e+f")
-print(f"pointer_entry: {pointer_entry}")
+ct_file_path_current_life = r'C:\Development Tools\VSCodeProjects\POE2DPSVALUEChecker\cheatengine\Path of Exile 2 current_life.ct'
+ct_file_path_current_mana = r'C:\Development Tools\VSCodeProjects\POE2DPSVALUEChecker\cheatengine\Path of Exile 2 current_mana.ct'
+pointer_entry_current_life = ps.get_pointer_from_ct_file(ct_file_path_current_life, "current_life_patch_e+f")
+pointer_entry_current_mana = ps.get_pointer_from_ct_file(ct_file_path_current_mana, "current_mana_0.1.0f")
 
-base_offset_currentlife = pointer_entry["BaseOffset"]
+print(f"pointer current_life: {pointer_entry_current_life}")
+print(f"pointer current_mana: {pointer_entry_current_mana}")
 
-print(f"base_offset_currentlife: {hex(base_offset_currentlife)}")
+base_offset_current_life = pointer_entry_current_life["BaseOffset"]
+base_offset_current_mana = pointer_entry_current_mana["BaseOffset"]
 
-base_address = allocationbase_address_threadstack0 + base_offset_currentlife
-print (f"base_address: {hex(base_address)}")
+print(f"base_offset_current_life: {hex(base_offset_current_life)}")
+print(f"base_offset_current_mana: {hex(base_offset_current_mana)}")
+
+
+# Patch Values // Need rescan after Patch
+base_address_current_mana = allocationbase_address + base_offset_current_mana
+# Threadstack values
+base_address_current_life = allocationbase_address_threadstack0 + base_offset_current_life
+
+print (f"base_address_current_life: {hex(base_address_current_life)}")
+print (f"base_address_current_mana: {hex(base_address_current_mana)}")
 
 # Offsets to follow
 offsetmap = {
-    "current_health": pointer_entry["Offsets"],
+    "current_health": pointer_entry_current_life["Offsets"],
+    "current_mana": pointer_entry_current_mana["Offsets"]
 }
 
-value = ps.get_pointer(pm, base_address, offsetmap["current_health"])
+current_life = ps.get_pointer(pm, base_address_current_life, offsetmap["current_health"])
+current_mana = ps.get_pointer(pm, base_address_current_mana, offsetmap["current_mana"])
 
-print(f"current_health: {value}")
+print(f"current_health: {current_life}")
+print(f"current_mana: {current_mana}")
