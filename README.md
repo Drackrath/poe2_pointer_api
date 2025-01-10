@@ -6,10 +6,10 @@ This project aims to provide application creators with a live-data feed from a r
 - [x] Research on how to retrieve pointers
 - [x] Research on whether pointers of Path of Exile are persistent through different sessions
 - Research on whether pointers are persistent on different machines // Needs Other Contributors
-- Research on whether pointers are persistent through changing releases // Needs game update
-- [x] //ON HOLD// Research on which pointers are persistent to be beneficial
+- [x] Research on whether pointers are persistent through changing releases // Needs game update
+- [x] // CURRENT STAGE // Research on which pointers are persistent to be beneficial
   - Retrieve all possible pointers and classify
-- [x] //CURRENT STAGE// Research how to access THREADSTACK0 via Python
+- [x] Research how to access THREADSTACK0 via Python
 - Wrap all pointers with Getters
 - Write Documentation
 - Write Comments
