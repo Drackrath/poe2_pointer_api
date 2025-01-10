@@ -6,6 +6,7 @@
 
 from pymem import Pymem
 import src.pointerservice as ps
+import os
 
 process_name = "PathOfExileSteam.exe"
 pid = ps.get_pid(process_name) 
@@ -18,8 +19,9 @@ allocationbase_address_threadstack0 = ps.get_threadstack0_base_address(pid)
 
 print(f"allocationbase_address_threadstack0: {hex(allocationbase_address_threadstack0)}")
 
-ct_file_path_current_life = r'C:\Development Tools\VSCodeProjects\POE2DPSVALUEChecker\cheatengine\Path of Exile 2 current_life.ct'
-ct_file_path_current_mana = r'C:\Development Tools\VSCodeProjects\POE2DPSVALUEChecker\cheatengine\Path of Exile 2 current_mana.ct'
+current_directory = os.path.dirname(__file__)
+ct_file_path_current_life = os.path.join(current_directory, '../cheatengine/Path of Exile 2 current_life.ct')
+ct_file_path_current_mana = os.path.join(current_directory, '../cheatengine/Path of Exile 2 current_mana.ct')
 pointer_entry_current_life = ps.get_pointer_from_ct_file(ct_file_path_current_life, "current_life_patch_e+f")
 pointer_entry_current_mana = ps.get_pointer_from_ct_file(ct_file_path_current_mana, "current_mana_0.1.0f")
 

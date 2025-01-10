@@ -4,6 +4,7 @@ import psutil
 from pymem import Pymem
 import subprocess
 import xml.etree.ElementTree as ET
+import os
 
 def get_pid(process_name):
     for proc in psutil.process_iter(['pid', 'name']):
@@ -53,11 +54,24 @@ def get_module_base_address(process_name):
 
     return module_info.lpBaseOfDll
 
+def is_threadstack_exe_in_same_directory():
+    """
+    Checks if threadstack.exe is in the same directory as this Python file.
+    """
+    current_directory = os.path.dirname(__file__)
+    threadstack_path = os.path.join(current_directory, 'threadstack.exe')
+    return os.path.isfile(threadstack_path)
+
 def get_threadstack0_base_address(pid):
     """
     Executes threadstack.exe with the given PID and returns the BASE ADDRESS of THREADSTACK 0.
     """
-    result = subprocess.run([r'C:\Development Tools\VSCodeProjects\POE2DPSVALUEChecker\src\threadstack.exe', str(pid)], capture_output=True, text=True)
+    if not is_threadstack_exe_in_same_directory():
+        raise Exception("threadstack.exe not found in the same directory as pointerservice.py")
+
+    current_directory = os.path.dirname(__file__)
+    threadstack_path = os.path.join(current_directory, 'threadstack.exe')
+    result = subprocess.run([threadstack_path, str(pid)], capture_output=True, text=True)
     if result.returncode != 0:
         raise Exception("Failed to execute threadstack.exe")
 

@@ -9,47 +9,6 @@
       <Address>0</Address>
       <CheatEntries>
         <CheatEntry>
-          <ID>190</ID>
-          <Description>"pointerscan result"</Description>
-          <ShowAsSigned>0</ShowAsSigned>
-          <VariableType>4 Bytes</VariableType>
-          <Address>"THREADSTACK0"-000001C8</Address>
-          <Offsets>
-            <Offset>378</Offset>
-            <Offset>18</Offset>
-            <Offset>48</Offset>
-            <Offset>A0</Offset>
-            <Offset>60</Offset>
-            <Offset>20</Offset>
-            <Offset>10</Offset>
-            <Offset>48</Offset>
-            <Offset>30</Offset>
-            <Offset>110</Offset>
-            <Offset>8</Offset>
-            <Offset>38</Offset>
-          </Offsets>
-        </CheatEntry>
-        <CheatEntry>
-          <ID>191</ID>
-          <Description>"pointerscan result"</Description>
-          <VariableType>4 Bytes</VariableType>
-          <Address>"THREADSTACK0"-000001C0</Address>
-          <Offsets>
-            <Offset>378</Offset>
-            <Offset>18</Offset>
-            <Offset>48</Offset>
-            <Offset>A0</Offset>
-            <Offset>60</Offset>
-            <Offset>20</Offset>
-            <Offset>10</Offset>
-            <Offset>48</Offset>
-            <Offset>30</Offset>
-            <Offset>110</Offset>
-            <Offset>8</Offset>
-            <Offset>38</Offset>
-          </Offsets>
-        </CheatEntry>
-        <CheatEntry>
           <ID>192</ID>
           <Description>"pointerscan result"</Description>
           <VariableType>4 Bytes</VariableType>
@@ -85,86 +44,6 @@
             <Offset>48</Offset>
             <Offset>30</Offset>
             <Offset>180</Offset>
-            <Offset>8</Offset>
-            <Offset>38</Offset>
-          </Offsets>
-        </CheatEntry>
-        <CheatEntry>
-          <ID>224</ID>
-          <Description>"pointerscan result"</Description>
-          <VariableType>4 Bytes</VariableType>
-          <Address>"THREADSTACK0"-000001C8</Address>
-          <Offsets>
-            <Offset>378</Offset>
-            <Offset>18</Offset>
-            <Offset>48</Offset>
-            <Offset>A0</Offset>
-            <Offset>60</Offset>
-            <Offset>20</Offset>
-            <Offset>10</Offset>
-            <Offset>48</Offset>
-            <Offset>30</Offset>
-            <Offset>100</Offset>
-            <Offset>8</Offset>
-            <Offset>38</Offset>
-          </Offsets>
-        </CheatEntry>
-        <CheatEntry>
-          <ID>225</ID>
-          <Description>"pointerscan result"</Description>
-          <VariableType>4 Bytes</VariableType>
-          <Address>"THREADSTACK0"-000001C0</Address>
-          <Offsets>
-            <Offset>378</Offset>
-            <Offset>18</Offset>
-            <Offset>48</Offset>
-            <Offset>A0</Offset>
-            <Offset>60</Offset>
-            <Offset>20</Offset>
-            <Offset>10</Offset>
-            <Offset>48</Offset>
-            <Offset>30</Offset>
-            <Offset>100</Offset>
-            <Offset>8</Offset>
-            <Offset>38</Offset>
-          </Offsets>
-        </CheatEntry>
-        <CheatEntry>
-          <ID>230</ID>
-          <Description>"pointerscan result"</Description>
-          <VariableType>4 Bytes</VariableType>
-          <Address>"THREADSTACK0"-000001C8</Address>
-          <Offsets>
-            <Offset>378</Offset>
-            <Offset>18</Offset>
-            <Offset>48</Offset>
-            <Offset>A0</Offset>
-            <Offset>60</Offset>
-            <Offset>20</Offset>
-            <Offset>10</Offset>
-            <Offset>48</Offset>
-            <Offset>30</Offset>
-            <Offset>F8</Offset>
-            <Offset>8</Offset>
-            <Offset>38</Offset>
-          </Offsets>
-        </CheatEntry>
-        <CheatEntry>
-          <ID>231</ID>
-          <Description>"pointerscan result"</Description>
-          <VariableType>4 Bytes</VariableType>
-          <Address>"THREADSTACK0"-000001C0</Address>
-          <Offsets>
-            <Offset>378</Offset>
-            <Offset>18</Offset>
-            <Offset>48</Offset>
-            <Offset>A0</Offset>
-            <Offset>60</Offset>
-            <Offset>20</Offset>
-            <Offset>10</Offset>
-            <Offset>48</Offset>
-            <Offset>30</Offset>
-            <Offset>F8</Offset>
             <Offset>8</Offset>
             <Offset>38</Offset>
           </Offsets>
